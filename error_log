@@ -1,0 +1,2 @@
+[28-Sep-2019 00:00:14 UTC] PHP Warning:  filesize(): stat failed for /home3/gabsolut/public_html/index.php in /home3/gabsolut/public_html/check.php on line 10
+[28-Sep-2019 00:00:14 UTC] PHP Warning:  file_get_contents(/home3/gabsolut/public_html/index.php): failed to open stream: No such file or directory in /home3/gabsolut/public_html/check.php on line 14

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+  <button class="share-button">Share with the Web Share API</button>
+
+
+</body>
+</html>
+
+<script>
+document.querySelector('.share-button').addEventListener('click', function() {
+    if(navigator.share) {
+      navigator.share({
+        title: 'mobiForge: Web Share API',
+        text: 'Check out this great article about the Web Share API',
+        url: 'https://mobiforge.com/design-development/web-share-api'
+      })
+      .then(() => console.log('Share complete'))
+      .error((error) => console.error('Could not share at this time', error))
+    }
+  });
+</script>
