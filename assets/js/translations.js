@@ -4,9 +4,9 @@ var languages = {
 };
 
 var tranlations = {
-    "[lblPrjectsDelivered]": {
+    "[lblProjectsDelivered]": {
         1: "Proiecte livrate",
-        2: "Prjects delivered"
+        2: "Projects delivered"
     },
     "[lblLinesOfCode]": {
         1: "Linii de cod",
@@ -165,7 +165,15 @@ var tranlations = {
 var currentLanguage = 2;
 
 function getTranslation(value) {
-    return tranlations[value][currentLanguage];
+    var translation;
+    try {
+        translation = tranlations[value][currentLanguage];
+    }
+    catch (err) {
+        translation = value;
+        console.warn(value + " was not found in translations!");
+    }
+    return translation;
 }
 
 function changeLanguage() {
