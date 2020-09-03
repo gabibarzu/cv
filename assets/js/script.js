@@ -14,13 +14,21 @@ $('.count').each(function () {
     });
 });
 
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () { hideLanguages() };
 
-function scrollFunction() {
-    var mybutton = document.getElementById("languages");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 1) {
-        mybutton.style.opacity = "0";
+function hideLanguages() {
+    var languages = document.getElementById("languages");
+    var btn = document.getElementById("translate");
+    if (document.documentElement.scrollTop > 1) {
+        btn.style.transform = "translateX(0px)";
+        languages.style.transform = "translateX(200px)";
     } else {
-        mybutton.style.opacity = "1";
+        btn.style.transform = "translateX(200px)";
+        languages.style.transform = "translateX(0px)";
     }
+}
+
+function showLanguages() {
+    document.getElementById("languages").style.transform = "translateX(0px)";
+    document.getElementById("translate").style.transform = "translateX(200px)";
 }

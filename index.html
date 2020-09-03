@@ -48,9 +48,14 @@
 <body>
     <div id="languages" class="languages">
         <img class="image image-small image-language" src="assets/img/language/ro.svg" alt="RO" loading="lazy"
-            data-value="1" onclick="changeLanguage()" />
+            data-value="1" onclick="changeLanguage(this)" />
         <img class="image image-small image-language" src="assets/img/language/en.svg" alt="UK" loading="lazy"
-            data-value="2" onclick="changeLanguage()" />
+            data-value="2" onclick="changeLanguage(this)" />
+    </div>
+
+    <div id="translate" class="translate">
+        <img class="image image-small image-translate" src="assets/img/language/translate.svg"
+            onclick="showLanguages()" />
     </div>
 
     <div class="page-header parallax">

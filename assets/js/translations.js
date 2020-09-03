@@ -176,10 +176,12 @@ function getTranslation(value) {
     return translation;
 }
 
-function changeLanguage() {
-    currentLanguage = currentLanguage == 1 ? 2 : 1;
-    setLanuageIcon();
-    changeTranslations();
+function changeLanguage(element) {
+    if (element.dataset.value != currentLanguage) {
+        currentLanguage = currentLanguage == 1 ? 2 : 1;
+        setLanuageIcon();
+        changeTranslations();
+    }
 }
 
 function setLanuageIcon() {
