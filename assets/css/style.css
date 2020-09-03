@@ -465,16 +465,22 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   transition: 0.3s ease-in-out;
 }
 
-.input-group-focus .form-control {
-  background-color: #fff;
-}
-
-.input-group-focus .input-group-addon {
-  background-color: #fff;
+.form-control:focus + .input-group-addon {
+  background-color: #fff !important;
+  border-color: #1e272e;
 }
 
 .form-control:focus {
   background-color: #fff;
+  border-color: #1e272e;
+}
+
+.form-control:hover + .input-group-addon {
+  border-color: #808e9b;
+}
+
+.form-control:hover {
+  border-color: #808e9b;
 }
 
 .input-lg {
@@ -906,6 +912,7 @@ textarea.form-control {
   z-index: 1;
   border: 0 none;
   cursor: default;
+  min-height: 351px;
 }
 
 .card .title {
@@ -1533,4 +1540,32 @@ outline	#3A2C60		#1e272e
 }
 .section.no-p-t .title {
   margin-bottom: 0;
+}
+
+.languages {
+  opacity: 1;
+  position: fixed;
+  z-index: 999;
+  top: 20px;
+  right: 20px;
+  transition: 0.3s ease-in-out;
+  cursor: default;
+}
+
+.languages .image {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.languages .image:hover:not(.selected) {
+  cursor: pointer;
+}
+
+.languages .image.selected {
+  border-color: #f7b731;
 }
