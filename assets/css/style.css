@@ -6713,3 +6713,22 @@ textarea.form-control {
     background: #FC6D26;
     color: white;
 }
+
+.fa-github.fa-remake {
+    background: black;
+    color: white;
+}
+
+.fa{
+    transition: 0.3s ease;
+}
+
+.card-img-top{
+    transition: 0.3s ease;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.card:hover .card-img-top{
+    filter: none;
+}
