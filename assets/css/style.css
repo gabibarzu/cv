@@ -1417,6 +1417,7 @@ textarea.form-control {
   border-radius: 50% !important;
   width: 70px !important;
   opacity: 0.8;
+  transition: 0.3s ease-in-out;
 }
 
 .fa-facebook.fa-remake {
@@ -1494,12 +1495,22 @@ outline	#3A2C60		#1e272e
 */
 
 .parallax {
-  background-image: url("../img/wallpaper.jpg");
+  background-image: url("../img/wallpaper-1.jpg");
   height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: fade 2s ease-in-out;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .section-dark .description {
@@ -1626,4 +1637,12 @@ outline	#3A2C60		#1e272e
 .image-translate:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
