@@ -701,7 +701,11 @@ textarea.form-control {
 }
 
 .section-gray {
-  background-color: #eeeeee;
+  background-color: #808e9b;
+}
+
+.section-gray .title {
+  color: #f5f6fa;
 }
 
 .section-nude {
@@ -856,6 +860,18 @@ textarea.form-control {
 
 .img-no-padding {
   padding: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .img-padding-l {
+    padding-right: 0px !important;
+    padding-left: 40px !important;
+  }
+
+  .img-padding-r {
+    padding-left: 0px !important;
+    padding-right: 40px !important;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1408,6 +1424,16 @@ textarea.form-control {
   color: white;
 }
 
+.fa-facebook-messenger.fa-remake {
+  background: rgb(0, 120, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 120, 255, 1) 0%,
+    rgba(0, 198, 255, 1) 100%
+  );
+  color: white;
+}
+
 .fa-instagram.fa-remake {
   background: rgb(131, 58, 180);
   background: linear-gradient(
@@ -1420,7 +1446,7 @@ textarea.form-control {
 }
 
 .fa-linkedin.fa-remake {
-  background: #0e76a8;
+  background: #2867b2;
   color: white;
 }
 
