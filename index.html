@@ -717,17 +717,18 @@
                 </div>
             </div>
         </div>
-        <div class="section text-center">
+        <div class="section text-center" id="form">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
-                        <h2 class="text-center" data-translate="[lblKeepInTouch]"></h2>
-                        <form class="contact-form">
+                        <h2 id="formTitle" class="text-center" data-translate="[lblKeepInTouch]"></h2>
+                        <div class="contact-form">
                             <div class="row">
                                 <div class="col-md-6">
                                     <label data-translate="[lblName]"></label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" data-translate="[lblName]" />
+                                        <input id="inputName" type="text" class="form-control"
+                                            data-translate="[lblName]" />
                                         <span class="input-group-addon">
                                             <i class="far fa-user"></i>
                                         </span>
@@ -736,7 +737,8 @@
                                 <div class="col-md-6">
                                     <label data-translate="[lblEmail]"></label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" data-translate="[lblEmail]" />
+                                        <input id="inputEmail" type="text" class="form-control"
+                                            data-translate="[lblEmail]" />
                                         <span class="input-group-addon">
                                             <i class="far fa-envelope"></i>
                                         </span>
@@ -744,14 +746,16 @@
                                 </div>
                             </div>
                             <label data-translate="[lblMessage]"></label>
-                            <textarea class="form-control" rows="4" data-translate="[lblMessagePlaceholder]"></textarea>
+                            <textarea id="inputMessage" class="form-control" rows="4"
+                                data-translate="[lblMessagePlaceholder]"></textarea>
                             <div class="row">
                                 <div class="col-md-4 ml-auto mr-auto">
-                                    <button class="btn btn-default btn-lg btn-fill" data-translate="[btnSendMessage]">
+                                    <button class="btn btn-default btn-lg btn-fill" data-translate="[btnSendMessage]"
+                                        onclick="sendMessage(this)">
                                     </button>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>

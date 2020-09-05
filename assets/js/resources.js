@@ -188,4 +188,12 @@ var tranlations = {
         1: "Animalele",
         2: "Pets"
     },
+    "[lblMessageSent]": {
+        1: "Mesajul a fost trimis!",
+        2: "Message was sent!"
+    },
+    "[btnSendNewMessage]": {
+        1: "Trimite un nou mesaj",
+        2: "Send a new message"
+    },
 };

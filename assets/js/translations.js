@@ -17,6 +17,7 @@ function changeLanguage(element) {
         currentLanguage = currentLanguage == 1 ? 2 : 1;
         setLanuageIcon();
         changeTranslations();
+        $("#form").removeClass("section-success");
     }
 }
 

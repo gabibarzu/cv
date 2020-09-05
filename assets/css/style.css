@@ -1,19 +1,3 @@
-/*!
-
- =========================================================
- * Paper Kit 2 - v2.0.1
- =========================================================
-
- * Product Page: http://www.creative-tim.com/product/paper-kit-2
- * Copyright 2017 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/timcreative/paper-kit/blob/master/LICENSE.md)
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
- */
-/*      light colors - used for select dropdown         */
-/*           Font Smoothing      */
 h1,
 .h1,
 h2,
@@ -299,11 +283,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   background-color: transparent;
 }
 
-.btn:hover,
-.btn:focus,
-.btn:active,
-.btn.active,
-.show > .btn.dropdown-toggle {
+.btn:hover {
   background-color: #485460;
   color: #f5f6fa;
   border-color: #485460;
@@ -411,46 +391,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   border: medium none !important;
 }
 
-.has-success .form-control,
-.has-error .form-control,
-.has-success .form-control:focus,
-.has-error .form-control:focus {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.has-success .form-control {
-  border: 1px solid #ccc;
-  color: #1e272e;
-}
-
-.has-success .form-control:focus {
-  border: 1px solid #6bd098;
-  color: #6bd098;
-}
-
-.has-danger .form-control {
-  background-color: #ffc0a4;
-  border: 1px solid #f5593d;
-  color: #f5593d;
-}
-
-.has-danger .form-control:focus {
-  background-color: #f5f6fa;
-  border: 1px solid #f5593d;
-}
-
-.form-control + .form-control-feedback {
-  border-radius: 6px;
-  font-size: 14px;
-  color: #f5593d;
-  font-size: 0.8rem;
-  position: absolute;
-  top: 100%;
-  padding-left: 12px;
-  vertical-align: middle;
-}
-
 .open .form-control {
   border-radius: 4px 4px 0 0;
   border-bottom-color: transparent;
@@ -465,37 +405,45 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   transition: 0.3s ease-in-out;
 }
 
+.input-group.has-error .input-group-addon {
+  border-color: #e74c3c;
+}
+
+.input-group.has-error .form-control {
+  border-color: #e74c3c;
+}
+
+.form-control.has-error {
+  border-color: #e74c3c;
+}
+
 .form-control:focus + .input-group-addon {
   background-color: #fff !important;
-  border-color: #1e272e;
 }
 
 .form-control:focus {
   background-color: #fff;
+}
+
+.input-group:not(.has-error) .form-control:focus + .input-group-addon {
   border-color: #1e272e;
 }
 
-.form-control:hover + .input-group-addon {
+.input-group:not(.has-error) .form-control:focus {
+  border-color: #1e272e;
+}
+
+.input-group:not(.has-error) .form-control:hover + .input-group-addon {
   border-color: #808e9b;
 }
 
-.form-control:hover {
+.input-group:not(.has-error) .form-control:hover {
   border-color: #808e9b;
 }
 
 .input-lg {
   height: 55px;
   padding: 11px 30px;
-}
-
-.has-error .form-control-feedback,
-.has-error .control-label {
-  color: #f5593d;
-}
-
-.has-success .form-control-feedback,
-.has-success .control-label {
-  color: #6bd098;
 }
 
 .input-group-addon {
@@ -505,19 +453,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .input-group-addon.no-border {
   border: medium none !important;
-}
-
-.has-success .input-group-addon,
-.has-error .input-group-addon {
-  background-color: #f5f6fa;
-}
-
-.has-error .form-control:focus + .input-group-addon {
-  color: #f5593d;
-}
-
-.has-success .form-control:focus + .input-group-addon {
-  color: #6bd098;
 }
 
 .form-control:focus + .input-group-addon,
@@ -599,14 +534,6 @@ textarea.form-control {
 
 .register-form .input-group .form-control {
   margin-left: -1px;
-}
-
-.has-success .form-control.form-control-success {
-  padding-right: 2.5em;
-}
-
-.has-danger .form-control.form-control-danger {
-  padding-right: 2.5em;
 }
 
 .progress {
@@ -694,6 +621,7 @@ textarea.form-control {
   padding: 40px 0;
   position: relative;
   background-color: #f5f6fa;
+  transition: 0.3s ease-in-out;
 }
 
 .section-with-space {
@@ -708,28 +636,9 @@ textarea.form-control {
   color: #f5f6fa;
 }
 
-.section-nude {
-  background-color: #fffcf5;
-}
-
-.section-gold {
-  background-color: #caac90;
+.section-success {
   color: #f5f6fa;
-}
-
-.section-brown {
-  background-color: #a59e94;
-  color: #f5f6fa;
-}
-
-.section-light-blue {
-  background-color: #51cbce;
-  color: #f5f6fa;
-}
-
-.section-dark-blue {
-  background-color: #506367;
-  color: #f5f6fa;
+  background-color: #2ecc71;
 }
 
 .section-dark {
