@@ -196,4 +196,12 @@ var tranlations = {
         1: "Trimite un nou mesaj",
         2: "Send a new message"
     },
+    "[lblThankMessage]": {
+        1: "Mesajul tău a fost trimis către Bârzu Gabriel Cătălin!",
+        2: "Your message was sent to Bârzu Gabriel Cătălin!"
+    },
+    "[mailTemplate]": {
+        1: "template-ro",
+        2: "template-en"
+    },
 };

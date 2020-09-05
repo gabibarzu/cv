@@ -1431,18 +1431,18 @@ outline	#3A2C60		#1e272e
   transition: 0.3s ease-in-out;
 }
 
-.phone-link {
+.contact-link {
   color: #1e272e;
   text-decoration: none;
   transition: 0.3s ease-in-out;
 }
 
-.phone-link h4 {
+.contact-link h4 {
   display: inline-block;
 }
 
-.phone-link:hover,
-.phone-link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: #485460;
   cursor: pointer;
   text-decoration: none;

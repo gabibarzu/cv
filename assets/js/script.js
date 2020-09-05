@@ -74,16 +74,38 @@ function sendMessage(button) {
         message.removeClass("has-error");
     }
     if (sendMessage) {
-        name.val("");
-        email.val("");
-        message.val("");
 
-        name.parent().removeClass("has-error");
-        email.parent().removeClass("has-error");
-        message.removeClass("has-error");
+        Email.send({
+            SecureToken: "ef544092-7e06-47c5-bdb4-c4952f5c38fc",
+            To: 'gabrielbarzu1994@gmail.com',
+            From: email.val(),
+            Subject: "Personal website form",
+            Body: message.val()
+        }).then(
+            reponse => {
+                name.val("");
+                email.val("");
+                message.val("");
 
-        form.addClass("section-success");
-        formTitle.text(getTranslation("[lblMessageSent]"));
-        button.text(getTranslation("[btnSendNewMessage]"));
+                name.parent().removeClass("has-error");
+                email.parent().removeClass("has-error");
+                message.removeClass("has-error");
+
+                form.addClass("section-success");
+                formTitle.text(getTranslation("[lblMessageSent]"));
+                button.text(getTranslation("[btnSendNewMessage]"));
+            }
+        );
+
+        $.get("templates/" + getTranslation("[mailTemplate]") + ".txt", function (html_string) {
+            var body = html_string.replace("{{name}}", name.val());
+            Email.send({
+                SecureToken: "ef544092-7e06-47c5-bdb4-c4952f5c38fc",
+                To: email.val(),
+                From: "gabrielbarzu1994@gmail.com",
+                Subject: getTranslation("[lblThankMessage]"),
+                Body: body
+            });
+        }, 'text');
     }
 }
