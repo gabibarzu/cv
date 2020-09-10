@@ -1,0 +1,54 @@
+.hidden-area {
+  display: none;
+}
+
+.game-board {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #808e9b;
+  color: #f5f6fa;
+  border: 6px solid #1e272e;
+  border-radius: 10px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+#gameboard[data-value] .box:hover {
+  background-color: #808e9b;
+  cursor: default;
+}
+
+.box {
+  border: 6px solid #1e272e;
+  font-weight: bold;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  cursor: default;
+}
+
+.box:hover:not([data-value]) {
+  background-color: #f5f6fa;
+  cursor: pointer;
+  color: #1e272e;
+}
+
+.box.win {
+  color: #fa8231;
+  background-color: #f5f6fa;
+}
+
+.box.win:hover {
+  color: #fa8231;
+  background-color: #f5f6fa !important;
+}
+
+@media all and (max-width: 650px) {
+  .game-board {
+    width: 300px;
+    height: 300px;
+  }
+}

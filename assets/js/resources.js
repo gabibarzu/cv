@@ -204,4 +204,16 @@ var tranlations = {
         1: "template-ro",
         2: "template-en"
     },
+    "[lblBored]": {
+        1: "Ești plictisit? Vrei să încerci un joc?",
+        2: "Are you bored? Wanna try a game?"
+    },
+    "[lblYou]": {
+        1: "Tu",
+        2: "You"
+    },
+    "[btnAgain]": {
+        1: "Joacă din nou",
+        2: "Play again"
+    },
 };

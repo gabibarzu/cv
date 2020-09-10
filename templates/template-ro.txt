@@ -118,7 +118,7 @@
                                         <font face="'Montserrat', sans-serif" color="#1e272e"
                                             style="font-size: 52px; line-height: 60px; font-weight: 300; letter-spacing: -1.5px;">
                                             <span
-                                                style="font-family: 'Montserrat', Arial, Tahoma, Geneva, sans-serif; color: #1e272e; font-size: 52px; line-height: 60px; font-weight: 300; letter-spacing: -1.5px;">Salut
+                                                style="font-family: 'Montserrat', Arial, Tahoma, Geneva, sans-serif; color: #1e272e; font-size: 52px; line-height: 60px; font-weight: 300; letter-spacing: -1.5px;">Bună
                                                 {{name}}</span>
                                         </font>
                                         <div style="height: 33px; line-height: 33px; font-size: 31px;">&nbsp;</div>
