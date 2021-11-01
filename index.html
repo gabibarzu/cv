@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      name="viewport"
+    />
     <meta name="viewport" content="width=device-width" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets.favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" />
-    <link rel="icon" sizes="192x192" href="/assets/favicons/android-chrome-192x192.png" />
-    <link rel="icon" sizes="512x512" href="/assets/favicons/android-chrome-512x512.png.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets.favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="/assets/favicons/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      sizes="512x512"
+      href="/assets/favicons/android-chrome-512x512.png.png"
+    />
 
     <title>Bârzu Gabriel Cătălin</title>
 
@@ -21,802 +45,1280 @@
     <link href="/assets/css/tic-tac-toe.css" rel="stylesheet" />
 
     <!--     Fonts and icons     -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,300,700" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- meta tags -->
-    <meta name="description"
-        content="I am a software developer who is a good listener, who succeeds in learning new things. A very sociable colleague who can easily  help, skills acquired in volunteering. Due to the intuition and the spirit of observation, I can troubleshoot and overcome most of the problems encountered." />
-    <meta name="keywords"
-        content="Front-end developer, Design website, Website creator, Free website, Cheep, Software developer, Romania, Iasi" />
+    <meta
+      name="description"
+      content="I am a software developer who is a good listener, who succeeds in learning new things. A very sociable colleague who can easily  help, skills acquired in volunteering. Due to the intuition and the spirit of observation, I can troubleshoot and overcome most of the problems encountered."
+    />
+    <meta
+      name="keywords"
+      content="Front-end developer, Design website, Website creator, Free website, Cheep, Software developer, Romania, Iasi"
+    />
     <meta name="author" content="Barzu Gabriel Catalin" />
-    <meta name="google-site-verification" content="maFY6L3FCYeLF-ca2NW7NYKKhUf_jZfbkKNJ5sp-vcA" />
+    <meta
+      name="google-site-verification"
+      content="maFY6L3FCYeLF-ca2NW7NYKKhUf_jZfbkKNJ5sp-vcA"
+    />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163095124-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-163095124-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag("config", "UA-163095124-1");
+      gtag("config", "UA-163095124-1");
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="languages" class="languages">
-        <img class="image image-small image-language" src="assets/img/language/ro.svg" alt="RO" loading="lazy"
-            data-value="1" onclick="changeLanguage(this)" />
-        <img class="image image-small image-language" src="assets/img/language/en.svg" alt="UK" loading="lazy"
-            data-value="2" onclick="changeLanguage(this)" />
+      <img
+        class="image image-small image-language"
+        src="assets/img/language/ro.svg"
+        alt="RO"
+        loading="lazy"
+        data-value="1"
+        onclick="changeLanguage(this)"
+      />
+      <img
+        class="image image-small image-language"
+        src="assets/img/language/en.svg"
+        alt="UK"
+        loading="lazy"
+        data-value="2"
+        onclick="changeLanguage(this)"
+      />
     </div>
 
     <div id="translate" class="translate d-none d-lg-block">
-        <img class="image image-small image-translate" src="assets/img/language/translate.svg"
-            onclick="showLanguages()" />
+      <img
+        class="image image-small image-translate"
+        src="assets/img/language/translate.svg"
+        onclick="showLanguages()"
+      />
     </div>
 
     <div class="page-header parallax">
-        <div class="filter"></div>
-        <div class="container">
-            <div class="motto text-center">
-                <h1>Bârzu Gabriel Cătălin</h1>
-                <h3>Software developer</h3>
-            </div>
+      <div class="filter"></div>
+      <div class="container">
+        <div class="motto text-center">
+          <h1>Bârzu Gabriel Cătălin</h1>
+          <h3>Software developer</h3>
         </div>
+      </div>
     </div>
     <div class="main">
-        <div class="section text-center section-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <div class="image-text">
-                            <img class="image image-small" src="assets/img/achievements/projects-delivered.svg"
-                                alt="Projects delivered" loading="lazy" />
-                            <p class="count">10</p>
-                            <span class="caption" data-translate="[lblProjectsDelivered]"></span>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <div class="image-text">
-                            <img class="image image-small" src="assets/img/achievements/lines-of-codes.svg"
-                                alt="Lines of codes" loading="lazy" />
-                            <p class="count">286683</p>
-                            <span class="caption" data-translate="[lblLinesOfCode]"></span>
-                        </div>
-                    </div>
-                    <div class=" col-sm-12 col-md-6 col-lg-3">
-                        <div class="image-text">
-                            <img class="image image-small" src="assets/img/achievements/coffees.svg" alt="Coffees"
-                                loading="lazy" />
-                            <p class="count">6953</p>
-                            <span class="caption" data-translate="[lblDrinkedCoffees]"></span>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <div class="image-text">
-                            <img class="image image-small" src="assets/img/achievements/programming-years.svg"
-                                alt="Programming years" loading="lazy" />
-                            <p class="count">4</p>
-                            <span class="caption" data-translate="[lblProgrammingYears]"></span>
-                        </div>
-                    </div>
-                </div>
+      <div class="section text-center section-gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="image-text">
+                <img
+                  class="image image-small"
+                  src="assets/img/achievements/projects-delivered.svg"
+                  alt="Projects delivered"
+                  loading="lazy"
+                />
+                <p class="count">10</p>
+                <span
+                  class="caption"
+                  data-translate="[lblProjectsDelivered]"
+                ></span>
+              </div>
             </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="image-text">
+                <img
+                  class="image image-small"
+                  src="assets/img/achievements/lines-of-codes.svg"
+                  alt="Lines of codes"
+                  loading="lazy"
+                />
+                <p class="count">286683</p>
+                <span class="caption" data-translate="[lblLinesOfCode]"></span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="image-text">
+                <img
+                  class="image image-small"
+                  src="assets/img/achievements/coffees.svg"
+                  alt="Coffees"
+                  loading="lazy"
+                />
+                <p class="count">6953</p>
+                <span
+                  class="caption"
+                  data-translate="[lblDrinkedCoffees]"
+                ></span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="image-text">
+                <img
+                  class="image image-small"
+                  src="assets/img/achievements/programming-years.svg"
+                  alt="Programming years"
+                  loading="lazy"
+                />
+                <p class="count">4</p>
+                <span
+                  class="caption"
+                  data-translate="[lblProgrammingYears]"
+                ></span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="section text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto">
-                        <div class="col-md-12 ml-auto mr-auto">
-                            <img src="/assets/img/barzuGabriel.png"
-                                class="img-circle img-avatar img-no-padding img-responsive" alt="Bârzu Gabriel Cătălin"
-                                loading="lazy" />
-                        </div>
+      </div>
+      <div class="section text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 ml-auto mr-auto">
+              <div class="col-md-12 ml-auto mr-auto">
+                <img
+                  src="/assets/img/barzuGabriel.png"
+                  class="img-circle img-avatar img-no-padding img-responsive"
+                  alt="Bârzu Gabriel Cătălin"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-md-12 ml-auto mr-auto">
+              <h2 class="title" data-translate="[lblHomeTitle]"></h2>
+              <h5
+                class="description"
+                data-translate="[lblHomeDescription]"
+              ></h5>
+              <hr />
+              <div class="phone">
+                <a class="contact-link" href="tel: +40 0754 821 311">
+                  <h4>
+                    <i class="fa fa-phone fa-inherit"></i> +40 0754 821 311
+                  </h4>
+                </a>
+              </div>
+              <div class="mail">
+                <a class="contact-link" href="mailto:eusunt@gabrielbarzu.ro">
+                  <h4>
+                    <i class="far fa-envelope fa-inherit"></i>
+                    eusunt@gabrielbarzu.ro
+                  </h4>
+                </a>
+              </div>
+              <h4>
+                <i class="fa fa-map-marker fa-inherit"></i> Iasi, Iasi, Romania
+              </h4>
+              <hr />
+              <a
+                href="/assets/download/CV-Barzu-Gabriel-Catalin.pdf"
+                class="btn btn-default btn-round btn-lg"
+                download
+                data-translate="[btnDownloadResume]"
+              >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section text-center section-gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div
+                id="carouselExampleInterval"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="5000">
+                    <div class="quote-card">
+                      <h3 class="quote-text">
+                        <i class="fa fa-quote-left mr-3" aria-hidden="true"></i
+                        >Choose a job you love, and you will never have to work
+                        a day in your life.
+                      </h3>
+                      <h5 class="quote-author">- Confucius, philosopher</h5>
                     </div>
-                    <div class="col-md-12 ml-auto mr-auto">
-                        <h2 class="title" data-translate="[lblHomeTitle]"></h2>
-                        <h5 class="description" data-translate="[lblHomeDescription]"></h5>
+                  </div>
+                  <div class="carousel-item" data-interval="5000">
+                    <div class="quote-card">
+                      <h3 class="quote-text">
+                        <i class="fa fa-quote-left mr-3" aria-hidden="true"></i
+                        >Hard work beats talent when talent fails to work hard.
+                      </h3>
+                      <h5 class="quote-author">
+                        - Kevin Durant, professional basketball player
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="5000">
+                    <div class="quote-card">
+                      <h3 class="quote-text">
+                        <i class="fa fa-quote-left mr-3" aria-hidden="true"></i
+                        >The moment you give up, is the moment you let someone
+                        else win.
+                      </h3>
+                      <h5 class="quote-author">
+                        - Kobe Bryant, former professional basketball player
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section text-center section-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 ml-auto mr-auto">
+              <h2 class="title" data-translate="[lblExperienceTitle]"></h2>
+              <div class="description">
+                <div class="row align-items-center how-it-works d-flex">
+                  <div
+                    class="
+                      col-2
+                      text-center
+                      bottom
+                      d-inline-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <div class="circle-timeline font-weight-bold">1</div>
+                  </div>
+                  <div class="col-8 text-left">
+                    <h4>Junior java developer</h4>
+                    <h5 class="text-white">UniCredit Services</h5>
+                    <p data-translate="[lblPeriodWork1]"></p>
+                  </div>
+                </div>
+                <div class="row timeline">
+                  <div class="col-2">
+                    <div class="corner top-right"></div>
+                  </div>
+                  <div class="col-8">
+                    <hr />
+                  </div>
+                  <div class="col-2">
+                    <div class="corner left-bottom"></div>
+                  </div>
+                </div>
+                <div
+                  class="
+                    row
+                    align-items-center
+                    justify-content-end
+                    how-it-works
+                    d-flex
+                  "
+                >
+                  <div class="col-8 text-right">
+                    <h4>Full-stack developer</h4>
+                    <h5 class="text-white">Viamedici Software Lab</h5>
+                    <p data-translate="[lblPeriodWork2]"></p>
+                  </div>
+                  <div
+                    class="
+                      col-2
+                      text-center
+                      full
+                      right
+                      d-inline-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <div class="circle-timeline font-weight-bold">2</div>
+                  </div>
+                </div>
+                <div class="row timeline">
+                  <div class="col-2">
+                    <div class="corner right-bottom"></div>
+                  </div>
+                  <div class="col-8">
+                    <hr />
+                  </div>
+                  <div class="col-2">
+                    <div class="corner top-left"></div>
+                  </div>
+                </div>
+                <div class="row align-items-center how-it-works d-flex">
+                  <div
+                    class="
+                      col-2
+                      text-center
+                      full
+                      left
+                      d-inline-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <div class="circle-timeline font-weight-bold">3</div>
+                  </div>
+                  <div class="col-8 text-left">
+                    <h4>Software developer</h4>
+                    <h5 class="text-white">Ness Digital Engineering</h5>
+                    <p data-translate="[lblPeriodWork3]"></p>
+                  </div>
+                </div>
+                <div class="row timeline">
+                  <div class="col-2">
+                    <div class="corner top-right"></div>
+                  </div>
+                  <div class="col-8">
+                    <hr />
+                  </div>
+                  <div class="col-2">
+                    <div class="corner left-bottom"></div>
+                  </div>
+                </div>
+                <div
+                  class="
+                    row
+                    align-items-center
+                    justify-content-end
+                    how-it-works
+                    d-flex
+                  "
+                >
+                  <div class="col-8 text-right">
+                    <h4>Software developer</h4>
+                    <h5 class="text-white">Centric IT Solution</h5>
+                    <p data-translate="[lblPeriodWork4]"></p>
+                  </div>
+                  <div
+                    class="
+                      col-2
+                      text-center
+                      top
+                      right
+                      d-inline-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <div class="circle-timeline font-weight-bold">4</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section text-center no-p-b">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 ml-auto mr-auto">
+              <h2 class="title">Front-end</h2>
+              <div class="description">
+                <div class="row">
+                  <div class="col-md-5 col-sm-12">
+                    <img
+                      src="/assets/img/skills/front-end.svg"
+                      class="img-responsive img-padding img-padding-r"
+                      alt="Frontend"
+                      width="100%"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <br class="d-none d-lg-block" /><br
+                      class="d-none d-lg-block"
+                    />
+                    <div class="col-md-12">
+                      <h3>CSS</h3>
+                      <div class="progress" style="height: 30px">
+                        <div
+                          class="
+                            progress-bar progress-text-right progress-bar-blue
+                          "
+                          role="progressbar"
+                          style="width: 70%; height: 30px"
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <span class="progress-bar-text">70%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <h3>HTML</h3>
+                      <div class="progress" style="height: 30px">
+                        <div
+                          class="
+                            progress-bar progress-text-right progress-bar-orange
+                          "
+                          role="progressbar"
+                          style="width: 90%; height: 30px"
+                          aria-valuenow="90"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <span class="progress-bar-text">90%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <h3>JavaScript</h3>
+                      <div class="progress" style="height: 30px">
+                        <div
+                          class="
+                            progress-bar progress-text-right progress-bar-yellow
+                          "
+                          role="progressbar"
+                          style="width: 80%; height: 30px"
+                          aria-valuenow="80"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <span class="progress-bar-text">80%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <h3>Angular</h3>
+                      <div class="progress" style="height: 30px">
+                        <div
+                          class="
+                            progress-bar progress-text-right progress-bar-red
+                          "
+                          role="progressbar"
+                          style="width: 60%; height: 30px"
+                          aria-valuenow="60"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <span class="progress-bar-text">60%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section text-center no-p-t no-p-b">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 ml-auto mr-auto">
+              <h2 class="title">Back-end</h2>
+              <div class="description">
+                <div class="row">
+                  <div class="col-sm-12 d-block d-sm-none">
+                    <img
+                      src="/assets/img/skills/back-end.svg"
+                      class="img-responsive img-padding"
+                      alt="Backend"
+                      width="100%"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <br class="d-none d-lg-block" /><br
+                      class="d-none d-lg-block"
+                    />
+                    <div class="col-md-12">
+                      <h3>C#</h3>
+                      <div class="progress" style="height: 30px">
+                        <div
+                          class="
+                            progress-bar progress-text-right progress-bar-purple
+                          "
+                          role="progressbar"
+                          style="width: 70%; height: 30px"
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <span class="progress-bar-text">70%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <h3>Java</h3>
+                      <div class="progress" style="height: 30px">
+                        <div
+                          class="
+                            progress-bar progress-text-right progress-bar-orange
+                          "
+                          role="progressbar"
+                          style="width: 40%; height: 30px"
+                          aria-valuenow="40"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <span class="progress-bar-text">40%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <h3>PHP</h3>
+                      <div class="progress" style="height: 30px">
+                        <div
+                          class="
+                            progress-bar progress-text-right progress-bar-blue
+                          "
+                          role="progressbar"
+                          style="width: 50%; height: 30px"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <span class="progress-bar-text">50%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <h3>Python</h3>
+                      <div class="progress" style="height: 30px">
+                        <div
+                          class="
+                            progress-bar progress-text-right progress-bar-yellow
+                          "
+                          role="progressbar"
+                          style="width: 30%; height: 30px"
+                          aria-valuenow="30"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <span class="progress-bar-text">30%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5 col-sm-12 d-none d-sm-block">
+                    <img
+                      src="/assets/img/skills/back-end.svg"
+                      class="img-responsive img-padding img-padding-l"
+                      alt="Backend"
+                      width="100%"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section text-center no-p-t">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 ml-auto mr-auto">
+              <h2 class="title">Dev-ops</h2>
+              <div class="description">
+                <div class="row">
+                  <div class="col-md-5 col-sm-12">
+                    <img
+                      src="/assets/img/skills/dev-ops.svg"
+                      class="img-responsive img-padding img-padding-r"
+                      alt="Devops"
+                      width="100%"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                    <br class="d-none d-lg-block" /><br
+                      class="d-none d-lg-block"
+                    />
+                    <div class="col-md-12">
+                      <h3>Oracle</h3>
+                      <div class="progress" style="height: 30px">
+                        <div
+                          class="
+                            progress-bar progress-text-right progress-bar-red
+                          "
+                          role="progressbar"
+                          style="width: 70%; height: 30px"
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <span class="progress-bar-text">70%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <h3>Sql</h3>
+                      <div class="progress" style="height: 30px">
+                        <div
+                          class="
+                            progress-bar progress-text-right progress-bar-blue
+                          "
+                          role="progressbar"
+                          style="width: 90%; height: 30px"
+                          aria-valuenow="90"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <span class="progress-bar-text">90%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <h3>Unix</h3>
+                      <div class="progress" style="height: 30px">
+                        <div
+                          class="
+                            progress-bar progress-text-right progress-bar-black
+                          "
+                          role="progressbar"
+                          style="width: 50%; height: 30px"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <span class="progress-bar-text">50%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <h3>Git</h3>
+                      <div class="progress" style="height: 30px">
+                        <div
+                          class="
+                            progress-bar progress-text-right progress-bar-orange
+                          "
+                          role="progressbar"
+                          style="width: 80%; height: 30px"
+                          aria-valuenow="80"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <span class="progress-bar-text">80%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section text-center section-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 ml-auto mr-auto">
+              <h2 class="title" data-translate="[lblWorkTitle]"></h2>
+              <div class="description">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 ml-auto mr-auto">
+                    <div class="card">
+                      <h3 class="title" data-translate="[lblWorkFast]"></h3>
+                      <img
+                        src="/assets/img/skills/fast.svg"
+                        class="img-responsive img-padding-top-bottom"
+                        alt="Fast"
+                        width="100%"
+                        loading="lazy"
+                      />
+                      <h5
+                        class="description"
+                        data-translate="[lblWorkFastDescription]"
+                      ></h5>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 ml-auto mr-auto">
+                    <div class="card">
+                      <h3
+                        class="title"
+                        data-translate="[lblWorkResponsive]"
+                      ></h3>
+                      <img
+                        src="/assets/img/skills/responsive.svg"
+                        class="img-responsive img-padding-top-bottom"
+                        alt="Responsive"
+                        width="100%"
+                        loading="lazy"
+                      />
+                      <h5
+                        class="description"
+                        data-translate="[lblWorkResponsiveDescription]"
+                      ></h5>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 ml-auto mr-auto">
+                    <div class="card">
+                      <h3
+                        class="title"
+                        data-translate="[lblWorkIntuitive]"
+                      ></h3>
+                      <img
+                        src="/assets/img/skills/intuitive.svg"
+                        class="img-responsive img-padding-top-bottom"
+                        alt="Intuitive"
+                        width="100%"
+                        loading="lazy"
+                      />
+                      <h5
+                        class="description"
+                        data-translate="[lblWorkIntuitiveDescription]"
+                      ></h5>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 ml-auto mr-auto">
+                    <div class="card">
+                      <h3 class="title" data-translate="[lblWorkDynamic]"></h3>
+                      <img
+                        src="/assets/img/skills/dynamic.svg"
+                        class="img-responsive img-padding-top-bottom"
+                        alt="Dynamic"
+                        width="100%"
+                        loading="lazy"
+                      />
+                      <h5
+                        class="description"
+                        data-translate="[lblWorkDynamicDescription]"
+                      ></h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 ml-auto mr-auto">
+              <h2 class="title" data-translate="[lblPortofolio]"></h2>
+              <div class="description">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+                    <div class="card card-no-shadow">
+                      <img
+                        class="card-img-top"
+                        src="/assets/img/portofolio/alycad.jpg"
+                        alt="Alycad"
+                        width="100%"
+                        loading="lazy"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Cadastru Iași</h4>
                         <hr />
-                        <div class="phone">
-                            <a class="contact-link" href="tel: +40 0754 821 311">
-                                <h4><i class="fa fa-phone fa-inherit"></i> +40 0754 821 311</h4>
-                            </a>
-                        </div>
-                        <div class="mail">
-                            <a class="contact-link" href="mailto:eusunt@gabrielbarzu.ro">
-                                <h4><i class="far fa-envelope fa-inherit"></i> eusunt@gabrielbarzu.ro</h4>
-                            </a>
-                        </div>
-                        <h4>
-                            <i class="fa fa-map-marker fa-inherit"></i> Iasi, Iasi, Romania
-                        </h4>
+                        <p class="card-text" data-translate="[lblAlyCad]"></p>
                         <hr />
-                        <a href="/assets/download/CV-Barzu-Gabriel-Catalin.pdf" class="btn btn-default btn-round btn-lg"
-                            download data-translate="[btnDownloadResume]">
-                        </a>
+                        <a
+                          href="https://cadastruiasi.ro/"
+                          class="btn btn-default btn-alycad"
+                          target="_blank"
+                          data-translate="[btnVisitWebsite]"
+                        ></a>
+                      </div>
                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+                    <div class="card card-no-shadow">
+                      <img
+                        class="card-img-top"
+                        src="/assets/img/portofolio/flightIT.jpg"
+                        alt="FlightIt"
+                        width="100%"
+                        loading="lazy"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">FlighIT</h4>
+                        <hr />
+                        <p class="card-text" data-translate="[lblFlightIt]"></p>
+                        <hr />
+                        <a
+                          href="https://flightit.gabrielbarzu.ro/"
+                          class="btn btn-default btn-flighit"
+                          target="_blank"
+                          data-translate="[btnVisitWebsite]"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+                    <div class="card card-no-shadow">
+                      <img
+                        class="card-img-top"
+                        src="/assets/img/portofolio/insertRandom.jpg"
+                        alt="InsertRandom"
+                        width="100%"
+                        loading="lazy"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">InsertRandom</h4>
+                        <hr />
+                        <p
+                          class="card-text"
+                          data-translate="[lblInsertRandom]"
+                        ></p>
+                        <hr />
+                        <a
+                          href="https://insertRandom.gabrielbarzu.ro/"
+                          class="btn btn-default btn-insertRandom"
+                          target="_blank"
+                          data-translate="[btnVisitWebsite]"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+                    <div class="card card-no-shadow">
+                      <img
+                        class="card-img-top"
+                        src="/assets/img/portofolio/myCity.jpg"
+                        alt="MyCity"
+                        width="100%"
+                        loading="lazy"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">My city</h4>
+                        <hr />
+                        <p class="card-text" data-translate="[lblMyCity]"></p>
+                        <hr />
+                        <a
+                          href="https://mycity.gabrielbarzu.ro/"
+                          class="btn btn-default btn-mycity"
+                          target="_blank"
+                          data-translate="[btnVisitWebsite]"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+                    <div class="card card-no-shadow">
+                      <img
+                        class="card-img-top"
+                        src="/assets/img/portofolio/reactMedia.jpg"
+                        alt="ReactMedia"
+                        width="100%"
+                        loading="lazy"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">React media</h4>
+                        <hr />
+                        <p
+                          class="card-text"
+                          data-translate="[lblReactMedia]"
+                        ></p>
+                        <hr />
+                        <a
+                          href="https://reactmedia.gabrielbarzu.ro/"
+                          class="btn btn-default btn-react"
+                          target="_blank"
+                          data-translate="[btnVisitWebsite]"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+                    <div class="card card-no-shadow">
+                      <img
+                        class="card-img-top"
+                        src="/assets/img/portofolio/rentMe.jpg"
+                        alt="RentMe"
+                        width="100%"
+                        loading="lazy"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">RentME</h4>
+                        <hr />
+                        <p class="card-text" data-translate="[lblRentMe]"></p>
+                        <hr />
+                        <a
+                          href="https://rentme.gabrielbarzu.ro/"
+                          class="btn btn-default btn-rentme"
+                          target="_blank"
+                          data-translate="[btnVisitWebsite]"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+                    <div class="card card-no-shadow">
+                      <img
+                        class="card-img-top"
+                        src="/assets/img/portofolio/sad.jpg"
+                        alt="SAD"
+                        width="100%"
+                        loading="lazy"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">SAD</h4>
+                        <hr />
+                        <p class="card-text" data-translate="[lblSAD]"></p>
+                        <hr />
+                        <a
+                          href="https://sad.gabrielbarzu.ro/"
+                          class="btn btn-default btn-sad"
+                          target="_blank"
+                          data-translate="[btnVisitWebsite]"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+                    <div class="card card-no-shadow">
+                      <img
+                        class="card-img-top"
+                        src="/assets/img/portofolio/timeToGo.jpg"
+                        alt="TimeToGo"
+                        width="100%"
+                        loading="lazy"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Time to go</h4>
+                        <hr />
+                        <p class="card-text" data-translate="[lblTimeToGo]"></p>
+                        <hr />
+                        <a
+                          href="https://timetogo.gabrielbarzu.ro/"
+                          class="btn btn-default btn-timetogo"
+                          target="_blank"
+                          data-translate="[btnVisitWebsite]"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+                    <div class="card card-no-shadow">
+                      <img
+                        class="card-img-top"
+                        src="/assets/img/portofolio/wedding.jpg"
+                        alt="Wedding"
+                        width="100%"
+                        loading="lazy"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Wedding</h4>
+                        <hr />
+                        <p class="card-text" data-translate="[lblWedding]"></p>
+                        <hr />
+                        <a
+                          href="https://nunta.gabrielbarzu.ro/"
+                          class="btn btn-default btn-wedding"
+                          target="_blank"
+                          data-translate="[btnVisitWebsite]"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="section text-center section-dark">
-            <div class="container">
+      </div>
+      <div class="section text-center section-gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 ml-auto mr-auto">
+              <h2 class="title" data-translate="[lblHobies]"></h2>
+              <div class="description">
                 <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto">
-                        <h2 class="title" data-translate="[lblExperienceTitle]"></h2>
-                        <div class="description">
-                            <div class="row align-items-center how-it-works d-flex">
-                                <div
-                                    class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
-                                    <div class="circle-timeline font-weight-bold">1</div>
-                                </div>
-                                <div class="col-8 text-left">
-                                    <h4>Junior java developer</h4>
-                                    <h5 class="text-white">UniCredit Services</h5>
-                                    <p data-translate="[lblPeriodWork1]"></p>
-                                </div>
-                            </div>
-                            <div class="row timeline">
-                                <div class="col-2">
-                                    <div class="corner top-right"></div>
-                                </div>
-                                <div class="col-8">
-                                    <hr />
-                                </div>
-                                <div class="col-2">
-                                    <div class="corner left-bottom"></div>
-                                </div>
-                            </div>
-                            <div class="row align-items-center justify-content-end how-it-works d-flex">
-                                <div class="col-8 text-right">
-                                    <h4>Full-stack developer</h4>
-                                    <h5 class="text-white">Viamedici Software Lab</h5>
-                                    <p data-translate="[lblPeriodWork2]"></p>
-                                </div>
-                                <div
-                                    class="col-2 text-center full right d-inline-flex justify-content-center align-items-center">
-                                    <div class="circle-timeline font-weight-bold">2</div>
-                                </div>
-                            </div>
-                            <div class="row timeline">
-                                <div class="col-2">
-                                    <div class="corner right-bottom"></div>
-                                </div>
-                                <div class="col-8">
-                                    <hr />
-                                </div>
-                                <div class="col-2">
-                                    <div class="corner top-left"></div>
-                                </div>
-                            </div>
-                            <div class="row align-items-center how-it-works d-flex">
-                                <div
-                                    class="col-2 text-center full left d-inline-flex justify-content-center align-items-center">
-                                    <div class="circle-timeline font-weight-bold">3</div>
-                                </div>
-                                <div class="col-8 text-left">
-                                    <h4>Software developer</h4>
-                                    <h5 class="text-white">Ness Digital Engineering</h5>
-                                    <p data-translate="[lblPeriodWork3]"></p>
-                                </div>
-                            </div>
-                            <div class="row timeline">
-                                <div class="col-2">
-                                    <div class="corner top-right"></div>
-                                </div>
-                                <div class="col-8">
-                                    <hr />
-                                </div>
-                                <div class="col-2">
-                                    <div class="corner left-bottom"></div>
-                                </div>
-                            </div>
-                            <div class="row align-items-center justify-content-end how-it-works d-flex">
-                                <div class="col-8 text-right">
-                                    <h4>Software developer</h4>
-                                    <h5 class="text-white">Centric IT Solution</h5>
-                                    <p data-translate="[lblPeriodWork4]"></p>
-                                </div>
-                                <div
-                                    class="col-2 text-center top right d-inline-flex justify-content-center align-items-center">
-                                    <div class="circle-timeline font-weight-bold">4</div>
-                                </div>
-                            </div>
-                        </div>
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <div class="image-text">
+                      <img
+                        class="image image-small"
+                        src="assets/img/hobbies/basketball.svg"
+                        alt="Projects delivered"
+                        loading="lazy"
+                      />
+                      <span
+                        class="caption pt-3"
+                        data-translate="[lblBasktball]"
+                      ></span>
                     </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <div class="image-text">
+                      <img
+                        class="image image-small"
+                        src="assets/img/hobbies/coffee-maker.svg"
+                        alt="Projects delivered"
+                        loading="lazy"
+                      />
+                      <span
+                        class="caption pt-3"
+                        data-translate="[lblCofeeMaker]"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <div class="image-text">
+                      <img
+                        class="image image-small"
+                        src="assets/img/hobbies/game-controller.svg"
+                        alt="Projects delivered"
+                        loading="lazy"
+                      />
+                      <span
+                        class="caption pt-3"
+                        data-translate="[lblGaming]"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <div class="image-text">
+                      <img
+                        class="image image-small"
+                        src="assets/img/hobbies/headphones.svg"
+                        alt="Projects delivered"
+                        loading="lazy"
+                      />
+                      <span
+                        class="caption pt-3"
+                        data-translate="[lblMusic]"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <div class="image-text">
+                      <img
+                        class="image image-small"
+                        src="assets/img/hobbies/movie-player.svg"
+                        alt="Projects delivered"
+                        loading="lazy"
+                      />
+                      <span
+                        class="caption pt-3"
+                        data-translate="[lblMovies]"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <div class="image-text">
+                      <img
+                        class="image image-small"
+                        src="assets/img/hobbies/pet-food.svg"
+                        alt="Projects delivered"
+                        loading="lazy"
+                      />
+                      <span
+                        class="caption pt-3"
+                        data-translate="[lblPets]"
+                      ></span>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="section text-center no-p-b">
-            <div class="container">
+      </div>
+      <div class="section text-center d-none">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 ml-auto mr-auto">
+              <h2 class="title" data-translate="[lblBored]"></h2>
+              <div class="description">
                 <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto">
-                        <h2 class="title">Front-end</h2>
-                        <div class="description">
-                            <div class="row">
-                                <div class="col-md-5 col-sm-12">
-                                    <img src="/assets/img/skills/front-end.svg"
-                                        class="img-responsive img-padding img-padding-r" alt="Frontend" width="100%"
-                                        loading="lazy" />
-                                </div>
-                                <div class="col-md-7 col-sm-12">
-                                    <br class="d-none d-lg-block" /><br class="d-none d-lg-block" />
-                                    <div class="col-md-12">
-                                        <h3>CSS</h3>
-                                        <div class="progress" style="height: 30px">
-                                            <div class="progress-bar progress-text-right progress-bar-blue"
-                                                role="progressbar" style="width: 70%; height: 30px" aria-valuenow="70"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-bar-text">70%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <h3>HTML</h3>
-                                        <div class="progress" style="height: 30px">
-                                            <div class="progress-bar progress-text-right progress-bar-orange"
-                                                role="progressbar" style="width: 90%; height: 30px" aria-valuenow="90"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-bar-text">90%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <h3>JavaScript</h3>
-                                        <div class="progress" style="height: 30px">
-                                            <div class="progress-bar progress-text-right progress-bar-yellow"
-                                                role="progressbar" style="width: 80%; height: 30px" aria-valuenow="80"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-bar-text">80%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <h3>Angular</h3>
-                                        <div class="progress" style="height: 30px">
-                                            <div class="progress-bar progress-text-right progress-bar-red"
-                                                role="progressbar" style="width: 60%; height: 30px" aria-valuenow="60"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-bar-text">60%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <h2 class="col-12 ml-auto mr-auto text-center pb-3 mt-0">
+                    <span data-translate="[lblYou]">You:</span>
+                    <span class="text-bold text-dark pr-2" id="userScore"
+                      >0</span
+                    >
+                    <span class="pl-2">Gabi:</span>
+                    <span class="text-bold text-dark" id="computerScore"
+                      >0</span
+                    >
+                  </h2>
                 </div>
-            </div>
-        </div>
-        <div class="section text-center no-p-t no-p-b">
-            <div class="container">
                 <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto">
-                        <h2 class="title">Back-end</h2>
-                        <div class="description">
-                            <div class="row">
-                                <div class="col-sm-12 d-block d-sm-none">
-                                    <img src="/assets/img/skills/back-end.svg" class="img-responsive img-padding"
-                                        alt="Backend" width="100%" loading="lazy" />
-                                </div>
-                                <div class="col-md-7 col-sm-12">
-                                    <br class="d-none d-lg-block" /><br class="d-none d-lg-block" />
-                                    <div class="col-md-12">
-                                        <h3>C#</h3>
-                                        <div class="progress" style="height: 30px">
-                                            <div class="progress-bar progress-text-right progress-bar-purple"
-                                                role="progressbar" style="width: 70%; height: 30px" aria-valuenow="70"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-bar-text">70%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <h3>Java</h3>
-                                        <div class="progress" style="height: 30px">
-                                            <div class="progress-bar progress-text-right progress-bar-orange"
-                                                role="progressbar" style="width: 40%; height: 30px" aria-valuenow="40"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-bar-text">40%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <h3>PHP</h3>
-                                        <div class="progress" style="height: 30px">
-                                            <div class="progress-bar progress-text-right progress-bar-blue"
-                                                role="progressbar" style="width: 50%; height: 30px" aria-valuenow="50"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-bar-text">50%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <h3>Python</h3>
-                                        <div class="progress" style="height: 30px">
-                                            <div class="progress-bar progress-text-right progress-bar-yellow"
-                                                role="progressbar" style="width: 30%; height: 30px" aria-valuenow="30"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-bar-text">30%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-5 col-sm-12 d-none d-sm-block">
-                                    <img src="/assets/img/skills/back-end.svg"
-                                        class="img-responsive img-padding  img-padding-l" alt="Backend" width="100%"
-                                        loading="lazy" />
-                                </div>
-                            </div>
-                        </div>
+                  <div class="col-md-12 ml-auto mr-auto">
+                    <div class="game-board" id="gameboard">
+                      <div class="box" data-x="0" data-y="0"></div>
+                      <div class="box" data-x="0" data-y="1"></div>
+                      <div class="box" data-x="0" data-y="2"></div>
+                      <div class="box" data-x="1" data-y="0"></div>
+                      <div class="box" data-x="1" data-y="1"></div>
+                      <div class="box" data-x="1" data-y="2"></div>
+                      <div class="box" data-x="2" data-y="0"></div>
+                      <div class="box" data-x="2" data-y="1"></div>
+                      <div class="box" data-x="2" data-y="2"></div>
                     </div>
+                  </div>
                 </div>
+                <div id="gameRetry" class="row hidden-area">
+                  <div class="col-md-12 ml-auto mr-auto mt-5">
+                    <button
+                      class="btn btn-default btn-lg btn-fill"
+                      data-translate="[btnAgain]"
+                      onclick="startOver()"
+                    ></button>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="section text-center no-p-t">
-            <div class="container">
+      </div>
+      <div class="section text-center section-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 ml-auto mr-auto">
+              <h2 class="title" data-translate="[lblFindMe]"></h2>
+              <div class="description">
                 <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto">
-                        <h2 class="title">Dev-ops</h2>
-                        <div class="description">
-                            <div class="row">
-                                <div class="col-md-5 col-sm-12">
-                                    <img src="/assets/img/skills/dev-ops.svg"
-                                        class="img-responsive img-padding img-padding-r" alt="Devops" width="100%"
-                                        loading="lazy" />
-                                </div>
-                                <div class="col-md-7 col-sm-12">
-                                    <br class="d-none d-lg-block" /><br class="d-none d-lg-block" />
-                                    <div class="col-md-12">
-                                        <h3>Oracle</h3>
-                                        <div class="progress" style="height: 30px">
-                                            <div class="progress-bar progress-text-right progress-bar-red"
-                                                role="progressbar" style="width: 70%; height: 30px" aria-valuenow="70"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-bar-text">70%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <h3>Sql</h3>
-                                        <div class="progress" style="height: 30px">
-                                            <div class="progress-bar progress-text-right progress-bar-blue"
-                                                role="progressbar" style="width: 90%; height: 30px" aria-valuenow="90"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-bar-text">90%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <h3>Unix</h3>
-                                        <div class="progress" style="height: 30px">
-                                            <div class="progress-bar progress-text-right progress-bar-black"
-                                                role="progressbar" style="width: 50%; height: 30px" aria-valuenow="50"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-bar-text">50%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <h3>Git</h3>
-                                        <div class="progress" style="height: 30px">
-                                            <div class="progress-bar progress-text-right progress-bar-orange"
-                                                role="progressbar" style="width: 80%; height: 30px" aria-valuenow="80"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <span class="progress-bar-text">80%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <a
+                    href="https://www.linkedin.com/in/gabriel-barzu-99910113b"
+                    target="_blank"
+                    class="col-6 col-md-4 col-lg-2 social-link"
+                  >
+                    <div class="fab fa-linkedin fa-remake"></div>
+                    <h4 class="no-margin">
+                      <span class="social-title pt-3">Linkedin</span>
+                    </h4>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/gabriel.c.barzu"
+                    target="_blank"
+                    class="col-6 col-md-4 col-lg-2 social-link"
+                  >
+                    <div class="fab fa-facebook fa-remake"></div>
+                    <h4 class="no-margin">
+                      <span class="social-title pt-3">Facebook</span>
+                    </h4>
+                  </a>
+                  <a
+                    href="https://www.messenger.com/t/gabriel.c.barzu"
+                    target="_blank"
+                    class="col-6 col-md-4 col-lg-2 social-link"
+                  >
+                    <div class="fab fa-facebook-messenger fa-remake"></div>
+                    <h4 class="no-margin">
+                      <span class="social-title pt-3">Messenger</span>
+                    </h4>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/barzugabriel/"
+                    target="_blank"
+                    class="col-6 col-md-4 col-lg-2 social-link"
+                  >
+                    <div class="fab fa-instagram fa-remake"></div>
+                    <h4 class="no-margin">
+                      <span class="social-title pt-3">Instagram</span>
+                    </h4>
+                  </a>
+                  <a
+                    href="https://github.com/gabibarzu"
+                    target="_blank"
+                    class="col-6 col-md-4 col-lg-2 social-link"
+                  >
+                    <div class="fab fa-github fa-remake"></div>
+                    <h4 class="no-margin">
+                      <span class="social-title pt-3">Github</span>
+                    </h4>
+                  </a>
+                  <a
+                    href="https://gitlab.com/barzu.gabriel/"
+                    target="_blank"
+                    class="col-6 col-md-4 col-lg-2 social-link"
+                  >
+                    <div class="fab fa-gitlab fa-remake"></div>
+                    <h4 class="no-margin">
+                      <span class="social-title pt-3">Gitlab</span>
+                    </h4>
+                  </a>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="section text-center section-dark">
-            <div class="container">
+      </div>
+      <div class="section text-center" id="form">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 ml-auto mr-auto">
+              <h2
+                id="formTitle"
+                class="text-center"
+                data-translate="[lblKeepInTouch]"
+              ></h2>
+              <div class="contact-form">
                 <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto">
-                        <h2 class="title" data-translate="[lblWorkTitle]"></h2>
-                        <div class="description">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-6 ml-auto mr-auto">
-                                    <div class="card">
-                                        <h3 class="title" data-translate="[lblWorkFast]"></h3>
-                                        <img src="/assets/img/skills/fast.svg"
-                                            class="img-responsive img-padding-top-bottom" alt="Fast" width="100%"
-                                            loading="lazy" />
-                                        <h5 class="description" data-translate="[lblWorkFastDescription]">
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 ml-auto mr-auto">
-                                    <div class="card">
-                                        <h3 class="title" data-translate="[lblWorkResponsive]"></h3>
-                                        <img src="/assets/img/skills/responsive.svg"
-                                            class="img-responsive img-padding-top-bottom" alt="Responsive" width="100%"
-                                            loading="lazy" />
-                                        <h5 class="description" data-translate="[lblWorkResponsiveDescription]">
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 ml-auto mr-auto">
-                                    <div class="card">
-                                        <h3 class="title" data-translate="[lblWorkIntuitive]"></h3>
-                                        <img src="/assets/img/skills/intuitive.svg"
-                                            class="img-responsive img-padding-top-bottom" alt="Intuitive" width="100%"
-                                            loading="lazy" />
-                                        <h5 class="description" data-translate="[lblWorkIntuitiveDescription]">
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 ml-auto mr-auto">
-                                    <div class="card">
-                                        <h3 class="title" data-translate="[lblWorkDynamic]"></h3>
-                                        <img src="/assets/img/skills/dynamic.svg"
-                                            class="img-responsive img-padding-top-bottom" alt="Dynamic" width="100%"
-                                            loading="lazy" />
-                                        <h5 class="description" data-translate="[lblWorkDynamicDescription]">
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  <div class="col-md-6">
+                    <label data-translate="[lblName]"></label>
+                    <div class="input-group">
+                      <input
+                        id="inputName"
+                        type="text"
+                        class="form-control"
+                        data-translate="[lblName]"
+                      />
                     </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label data-translate="[lblEmail]"></label>
+                    <div class="input-group">
+                      <input
+                        id="inputEmail"
+                        type="text"
+                        class="form-control"
+                        data-translate="[lblEmail]"
+                      />
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="section text-center">
-            <div class="container">
+                <label data-translate="[lblMessage]"></label>
+                <textarea
+                  id="inputMessage"
+                  class="form-control"
+                  rows="4"
+                  data-translate="[lblMessagePlaceholder]"
+                ></textarea>
                 <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto">
-                        <h2 class="title" data-translate="[lblPortofolio]"></h2>
-                        <div class="description">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-                                    <div class="card card-no-shadow">
-                                        <img class="card-img-top" src="/assets/img/portofolio/alycad.jpg" alt="Alycad"
-                                            width="100%" loading="lazy" />
-                                        <div class="card-body">
-                                            <h4 class="card-title">AlyCad</h4>
-                                            <hr />
-                                            <p class="card-text" data-translate="[lblAlyCad]"></p>
-                                            <hr />
-                                            <a href="https://alycad.gabrielbarzu.ro/" class="btn btn-default btn-alycad"
-                                                target="_blank" data-translate="[btnVisitWebsite]"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-                                    <div class="card card-no-shadow">
-                                        <img class="card-img-top" src="/assets/img/portofolio/flightIT.jpg"
-                                            alt="FlightIt" width="100%" loading="lazy" />
-                                        <div class="card-body">
-                                            <h4 class="card-title">FlighIT</h4>
-                                            <hr />
-                                            <p class="card-text" data-translate="[lblFlightIt]">
-                                            </p>
-                                            <hr />
-                                            <a href="https://flightit.gabrielbarzu.ro/"
-                                                class="btn btn-default btn-flighit" target="_blank"
-                                                data-translate="[btnVisitWebsite]"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-                                    <div class="card card-no-shadow">
-                                        <img class="card-img-top" src="/assets/img/portofolio/insertRandom.jpg"
-                                            alt="InsertRandom" width="100%" loading="lazy" />
-                                        <div class="card-body">
-                                            <h4 class="card-title">InsertRandom</h4>
-                                            <hr />
-                                            <p class="card-text" data-translate="[lblInsertRandom]"></p>
-                                            <hr />
-                                            <a href="https://insertRandom.gabrielbarzu.ro/"
-                                                class="btn btn-default btn-insertRandom" target="_blank"
-                                                data-translate="[btnVisitWebsite]"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-                                    <div class="card card-no-shadow">
-                                        <img class="card-img-top" src="/assets/img/portofolio/myCity.jpg" alt="MyCity"
-                                            width="100%" loading="lazy" />
-                                        <div class="card-body">
-                                            <h4 class="card-title">My city</h4>
-                                            <hr />
-                                            <p class="card-text" data-translate="[lblMyCity]"></p>
-                                            <hr />
-                                            <a href="https://mycity.gabrielbarzu.ro/" class="btn btn-default btn-mycity"
-                                                target="_blank" data-translate="[btnVisitWebsite]"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-                                    <div class="card card-no-shadow">
-                                        <img class="card-img-top" src="/assets/img/portofolio/reactMedia.jpg"
-                                            alt="ReactMedia" width="100%" loading="lazy" />
-                                        <div class="card-body">
-                                            <h4 class="card-title">React media</h4>
-                                            <hr />
-                                            <p class="card-text" data-translate="[lblReactMedia]">
-                                            </p>
-                                            <hr />
-                                            <a href="https://reactmedia.gabrielbarzu.ro/"
-                                                class="btn btn-default btn-react" target="_blank"
-                                                data-translate="[btnVisitWebsite]"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-                                    <div class="card card-no-shadow">
-                                        <img class="card-img-top" src="/assets/img/portofolio/rentMe.jpg" alt="RentMe"
-                                            width="100%" loading="lazy" />
-                                        <div class="card-body">
-                                            <h4 class="card-title">RentME</h4>
-                                            <hr />
-                                            <p class="card-text" data-translate="[lblRentMe]">
-                                            </p>
-                                            <hr />
-                                            <a href="https://rentme.gabrielbarzu.ro/" class="btn btn-default btn-rentme"
-                                                target="_blank" data-translate="[btnVisitWebsite]"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-                                    <div class="card card-no-shadow">
-                                        <img class="card-img-top" src="/assets/img/portofolio/sad.jpg" alt="SAD"
-                                            width="100%" loading="lazy" />
-                                        <div class="card-body">
-                                            <h4 class="card-title">SAD</h4>
-                                            <hr />
-                                            <p class="card-text" data-translate="[lblSAD]"></p>
-                                            <hr />
-                                            <a href="https://sad.gabrielbarzu.ro/" class="btn btn-default btn-sad"
-                                                target="_blank" data-translate="[btnVisitWebsite]"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-                                    <div class="card card-no-shadow">
-                                        <img class="card-img-top" src="/assets/img/portofolio/timeToGo.jpg"
-                                            alt="TimeToGo" width="100%" loading="lazy" />
-                                        <div class="card-body">
-                                            <h4 class="card-title">Time to go</h4>
-                                            <hr />
-                                            <p class="card-text" data-translate="[lblTimeToGo]"></p>
-                                            <hr />
-                                            <a href="https://timetogo.gabrielbarzu.ro/"
-                                                class="btn btn-default btn-timetogo" target="_blank"
-                                                data-translate="[btnVisitWebsite]"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-                                    <div class="card card-no-shadow">
-                                        <img class="card-img-top" src="/assets/img/portofolio/wedding.jpg" alt="Wedding"
-                                            width="100%" loading="lazy" />
-                                        <div class="card-body">
-                                            <h4 class="card-title">Wedding</h4>
-                                            <hr />
-                                            <p class="card-text" data-translate="[lblWedding]"></p>
-                                            <hr />
-                                            <a href="https://nunta.gabrielbarzu.ro/" class="btn btn-default btn-wedding"
-                                                target="_blank" data-translate="[btnVisitWebsite]"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <div class="col-md-4 ml-auto mr-auto">
+                    <button
+                      class="btn btn-default btn-lg btn-fill"
+                      data-translate="[btnSendMessage]"
+                      onclick="sendMessage(this)"
+                    ></button>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="section text-center section-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto">
-                        <h2 class="title" data-translate="[lblHobies]"></h2>
-                        <div class="description">
-                            <div class="row">
-                                <div class="col-6 col-md-4 col-lg-2">
-                                    <div class="image-text">
-                                        <img class="image image-small" src="assets/img/hobbies/basketball.svg"
-                                            alt="Projects delivered" loading="lazy" />
-                                        <span class="caption pt-3" data-translate="[lblBasktball]"></span>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-2">
-                                    <div class="image-text">
-                                        <img class="image image-small" src="assets/img/hobbies/coffee-maker.svg"
-                                            alt="Projects delivered" loading="lazy" />
-                                        <span class="caption pt-3" data-translate="[lblCofeeMaker]"></span>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-2">
-                                    <div class="image-text">
-                                        <img class="image image-small" src="assets/img/hobbies/game-controller.svg"
-                                            alt="Projects delivered" loading="lazy" />
-                                        <span class="caption pt-3" data-translate="[lblGaming]"></span>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-2">
-                                    <div class="image-text">
-                                        <img class="image image-small" src="assets/img/hobbies/headphones.svg"
-                                            alt="Projects delivered" loading="lazy" />
-                                        <span class="caption pt-3" data-translate="[lblMusic]"></span>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-2">
-                                    <div class="image-text">
-                                        <img class="image image-small" src="assets/img/hobbies/movie-player.svg"
-                                            alt="Projects delivered" loading="lazy" />
-                                        <span class="caption pt-3" data-translate="[lblMovies]"></span>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-2">
-                                    <div class="image-text">
-                                        <img class="image image-small" src="assets/img/hobbies/pet-food.svg"
-                                            alt="Projects delivered" loading="lazy" />
-                                        <span class="caption pt-3" data-translate="[lblPets]"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto">
-                        <h2 class="title" data-translate="[lblBored]"></h2>
-                        <div class="description">
-                            <div class="row">
-                                <h2 class="col-12 ml-auto mr-auto text-center pb-3 mt-0">
-                                    <span data-translate="[lblYou]">You:</span>
-                                    <span class="text-bold text-dark pr-2" id="userScore">0</span>
-                                    <span class="pl-2">Gabi:</span>
-                                    <span class="text-bold text-dark" id="computerScore">0</span>
-                                </h2>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12 ml-auto mr-auto">
-                                    <div class="game-board" id="gameboard">
-                                        <div class="box" data-x="0" data-y="0"></div>
-                                        <div class="box" data-x="0" data-y="1"></div>
-                                        <div class="box" data-x="0" data-y="2"></div>
-                                        <div class="box" data-x="1" data-y="0"></div>
-                                        <div class="box" data-x="1" data-y="1"></div>
-                                        <div class="box" data-x="1" data-y="2"></div>
-                                        <div class="box" data-x="2" data-y="0"></div>
-                                        <div class="box" data-x="2" data-y="1"></div>
-                                        <div class="box" data-x="2" data-y="2"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="gameRetry" class="row hidden-area">
-                                <div class="col-md-12 ml-auto mr-auto mt-5">
-                                    <button class="btn btn-default btn-lg btn-fill" data-translate="[btnAgain]"
-                                        onclick="startOver()"></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section text-center section-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 ml-auto mr-auto">
-                        <h2 class="title" data-translate="[lblFindMe]"></h2>
-                        <div class="description">
-                            <div class="row">
-                                <a href="https://www.linkedin.com/in/gabriel-barzu-99910113b" target="_blank"
-                                    class="col-6 col-md-4 col-lg-2 social-link">
-                                    <div class="fab fa-linkedin fa-remake"></div>
-                                    <h4 class="no-margin">
-                                        <span class="social-title pt-3">Linkedin</span>
-                                    </h4>
-                                </a>
-                                <a href="https://www.facebook.com/gabriel.c.barzu" target="_blank"
-                                    class="col-6 col-md-4 col-lg-2 social-link">
-                                    <div class="fab fa-facebook fa-remake"></div>
-                                    <h4 class="no-margin">
-                                        <span class="social-title pt-3">Facebook</span>
-                                    </h4>
-                                </a>
-                                <a href="https://www.messenger.com/t/gabriel.c.barzu" target="_blank"
-                                    class="col-6 col-md-4 col-lg-2 social-link">
-                                    <div class="fab fa-facebook-messenger fa-remake"></div>
-                                    <h4 class="no-margin">
-                                        <span class="social-title pt-3">Messenger</span>
-                                    </h4>
-                                </a>
-                                <a href="https://www.instagram.com/barzugabriel/" target="_blank"
-                                    class="col-6 col-md-4 col-lg-2 social-link">
-                                    <div class="fab fa-instagram fa-remake"></div>
-                                    <h4 class="no-margin">
-                                        <span class="social-title pt-3">Instagram</span>
-                                    </h4>
-                                </a>
-                                <a href="https://github.com/gabibarzu" target="_blank"
-                                    class="col-6 col-md-4 col-lg-2 social-link">
-                                    <div class="fab fa-github fa-remake"></div>
-                                    <h4 class="no-margin">
-                                        <span class="social-title pt-3">Github</span>
-                                    </h4>
-                                </a>
-                                <a href="https://gitlab.com/barzu.gabriel/" target="_blank"
-                                    class="col-6 col-md-4 col-lg-2 social-link">
-                                    <div class="fab fa-gitlab fa-remake"></div>
-                                    <h4 class="no-margin">
-                                        <span class="social-title pt-3">Gitlab</span>
-                                    </h4>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section text-center" id="form">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto">
-                        <h2 id="formTitle" class="text-center" data-translate="[lblKeepInTouch]"></h2>
-                        <div class="contact-form">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label data-translate="[lblName]"></label>
-                                    <div class="input-group">
-                                        <input id="inputName" type="text" class="form-control"
-                                            data-translate="[lblName]" />
-                                        <span class="input-group-addon">
-                                            <i class="far fa-user"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label data-translate="[lblEmail]"></label>
-                                    <div class="input-group">
-                                        <input id="inputEmail" type="text" class="form-control"
-                                            data-translate="[lblEmail]" />
-                                        <span class="input-group-addon">
-                                            <i class="far fa-envelope"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <label data-translate="[lblMessage]"></label>
-                            <textarea id="inputMessage" class="form-control" rows="4"
-                                data-translate="[lblMessagePlaceholder]"></textarea>
-                            <div class="row">
-                                <div class="col-md-4 ml-auto mr-auto">
-                                    <button class="btn btn-default btn-lg btn-fill" data-translate="[btnSendMessage]"
-                                        onclick="sendMessage(this)">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="/assets/js/script.js"></script>
-<script src="/assets/js/resources.js"></script>
-<script src="/assets/js/translations.js"></script>
-<script src="/assets/js/tictactoe.js"></script>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"
+  ></script>
 
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/resources.js"></script>
+  <script src="/assets/js/translations.js"></script>
+  <script src="/assets/js/tictactoe.js"></script>
 </html>

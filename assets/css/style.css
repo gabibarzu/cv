@@ -468,7 +468,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   background-color: #f5f6fa;
 }
 
-.input-group .form-control:first-child,
+/* .input-group .form-control:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
@@ -481,7 +481,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child) {
   border-left: 0 none;
-}
+} */
 
 .form-control[disabled],
 .form-control[readonly],
@@ -614,7 +614,7 @@ textarea.form-control {
 .progress-bar-text {
   font-size: x-large;
   position: relative;
-  top: 7px;
+  top: 1px;
 }
 
 .progress-text-left > .progress-bar-text {
@@ -1597,4 +1597,11 @@ ul.timeline > li:before {
 
 ul.timeline h4 {
   text-align: left;
+}
+
+.quote-card .quote-text {
+  color: #ffffff;
+}
+.quote-card .quote-author {
+  color: #1e272e;
 }
