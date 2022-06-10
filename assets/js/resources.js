@@ -49,8 +49,12 @@ var tranlations = {
         2: "December 2018 - February 2020"
     },
     "[lblPeriodWork4]": {
-        1: "Februarie 2020 – Prezent",
-        2: "February 2020 - Present"
+        1: "Februarie 2020 – Iunie 2022",
+        2: "February 2020 - June 2022"
+    },
+    "[lblPeriodWork5]": {
+        1: "Iunie 2022 – Prezent",
+        2: "June 2022 - Present"
     },
     "[lblWorkTitle]": {
         1: "Cum lucrez?",
