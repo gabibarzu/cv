@@ -3,27 +3,43 @@
  * @param {*} n
  * @returns
  */
+var projects = 15;
+
 function setProjectsDelivered() {
-  $("#projects-delivered").text($(".project").length);
+  $("#projects-delivered").text(projects);
 }
+
 function setLinesOfCodes() {
-  $("#lines-of-codes").text($(".project").length * 1893);
+  $("#lines-of-codes").text(projects * 18193);
 }
+
 function setCoffees() {
   var diff = Math.floor((Date.now() - new Date("2016-11-16")) / 86400000);
   var coffees = diff * 1.8;
   $("#coffees").text(coffees);
 }
+
 function setProgrammingYears() {
   var diff = Math.floor((Date.now() - new Date("2016-11-16")) / 86400000);
   var years = Math.ceil(diff / 365);
   $("#programming-years").text(years);
 }
 
+function setRandomWallpaper() {
+  const parallaxElements = document.querySelectorAll(".parallax");
+
+  parallaxElements.forEach((parallaxElement) => {
+    const randomNumber = Math.floor(Math.random() * 4) + 1;
+    const imageUrl = `./assets/img/wallpaper-${randomNumber}.jpg`;
+    parallaxElement.style.backgroundImage = `url(${imageUrl})`;
+  });
+}
+
 setProjectsDelivered();
 setLinesOfCodes();
 setCoffees();
 setProgrammingYears();
+setRandomWallpaper();
 
 Number.prototype.format = function (n) {
   var r = new RegExp("\\d(?=(\\d{3})+" + (n > 0 ? "\\." : "$") + ")", "g");
