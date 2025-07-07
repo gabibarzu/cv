@@ -57,10 +57,13 @@ var tranlations = {
     2: "June 2022 - January 2023",
   },
   "[lblPeriodWork6]": {
-    1: "Ianuarie 2023 – Prezent",
-    2: "January 2023 - Present",
+    1: "Ianuarie 2023 – Aprilie 2025",
+    2: "January 2023 - April 2025",
   },
-
+  "[lblPeriodWork7]": {
+    1: "Aprilie 2025 – Prezent",
+    2: "April 2025 - Present",
+  },
   "[lblFindMe]": {
     1: "Găsește-mă pe",
     2: "Find me on",
@@ -119,7 +122,7 @@ var tranlations = {
     2: "The dose of How: Chapter 2 — How I've explained HTTP to my parents",
   },
   "[lblArticleHttpDescription]": {
-    1: "Operațiunea: Explicarea HTTP părinților mei - am folosit \"analogia cu restaurantul\" (eu = browser, chelner = cerere, mâncare = date) ... a rezultat în priviri confuze, întrebări despre lipsa cartofilor și tata care striga după \"managerul internetului!\"",
+    1: 'Operațiunea: Explicarea HTTP părinților mei - am folosit "analogia cu restaurantul" (eu = browser, chelner = cerere, mâncare = date) ... a rezultat în priviri confuze, întrebări despre lipsa cartofilor și tata care striga după "managerul internetului!"',
     2: 'Operation: Explaining HTTP to my parents - used the "restaurant analogy" (me = browser, waiter = request, food = data) ... resulted in confused looks, questions about missing potatoes and my dad yelling for the "internet manager!"',
   },
   "[lblArticleHttpPublished]": {
